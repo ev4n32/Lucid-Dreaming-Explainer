@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.hitem {
+    height: 75px;
+    background-color: #333;
+    flex-grow: 2;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+.hitem + .hitem {
+    margin-top: 1%;
+}
+.bcont {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+}
+.bitem {
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    margin-left: 2%;
+    padding: 5px;
+    flex: 2;
+}
+.bitem1 {
+    flex: 0.5;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}

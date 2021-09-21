@@ -40,8 +40,9 @@ nav>ul {
     padding: 0;
 }
 nav>ul>li {
-    padding: 5px;
     margin: auto;
     display: block;
 }
-
+a {
+    text-decoration: none;
+}
