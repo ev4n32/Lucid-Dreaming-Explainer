@@ -1,19 +1,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .hcontainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 15%;
     margin-right: 15%;
 }
 .hitem {
     height: 75px;
-    background-color: #333;
+    background: rgb(34,193,195);
+    background: linear-gradient(151deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     flex-grow: 2;
     color: #fff;
-    padding: 5px;
-    text-align: center;
+    padding-left: 2.5em;
+    border-radius: 5px;
 }
 .hitem + .hitem {
     margin-top: 1%;
@@ -21,31 +25,49 @@ body {
 .bcont {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 10px;
+    background-color: #fff;
 }
 .bitem {
-    height: 100px;
-    background-color: #333;
-    color: #fff;
+    color: #333;
     margin-left: 2%;
     padding: 5px;
     flex: 2;
 }
 .bitem1 {
     flex: 0.5;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    text-align: center;
+    color: #333;
 }
 a {
     text-decoration: none;
-    color: #fff;
+}
+a:hover li {
+    margin: 0;
+    margin-bottom: 2px;
+    text-decoration: underline;
+    border-right: 1px solid white;
+}
+a:visited {
+    color: #333;
+}
+a li {
+    padding: 5px;
+    margin: 0;
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: x-large;
 }
 ul {
     list-style-type: none;
-    padding: 5px;
     margin: 0;
+    padding: 0;
+    border-right: 1px solid black;
+}
+.bcont h1 {
+    margin: 0;
+    padding: 0;
 }
