@@ -8,16 +8,40 @@ body, header, p {
 }
 body {
     color: #333;
-    background-color: #FCF9EC;
+    background-color: #fff;
 }
 .head {
     padding: 10px;
-    background-color: #fcf9ec;
+    background: rgb(34,193,195);
+    background: linear-gradient(151deg, #12d3cf 0%, rgba(253,187,45,1) 100%);
     font-size: 25px;
-    border-bottom: 2px solid #12d3cf;
-}
-.head p {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
+}
+#logo {
+    flex: 2;
+}
+#links {
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    margin: auto;
+    padding-right: 15px;
+}
+#links a {
+    text-decoration: none;
+    color: #333;
+    padding: 3px;
+    margin: 3px;
+    border: 1px solid black;
+    flex-direction: column;
+}
+#links a:hover {
+    color:#12d3cf;
+    border: 1px solid #12d3cf;
 }
 .cont1 {
     margin-left: 15%;
@@ -69,10 +93,19 @@ body {
 #about {
     display: flex;
     padding: 5px;
+    flex-wrap: wrap;
 }
 #about .box1{
+    width: 1200px;
+    padding: 5px;
     margin: auto;
-    width: 1000px;
+}
+.box1 h1 {
+    text-align: center;
+    background-color: #12d3cf;
+    padding: 5px;
+    border-radius: 10px;
+    color: #333;
 }
 .iframe-container {
     width: 100%;
@@ -85,4 +118,5 @@ body {
     width: 100%;
     height: 100%;
 }
+
 
