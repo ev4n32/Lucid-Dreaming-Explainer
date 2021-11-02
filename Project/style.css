@@ -19,19 +19,23 @@ body {
 
 /* NAVBAR START */
 .head {
-    padding: 10px;
+    padding: 7.5px;
     background: rgb(34,193,195);
     background: linear-gradient(151deg, #12d3cf 0%, rgba(253,187,45,1) 100%);
+    border-radius: 5px;
     font-size: 25px;
     display: flex;
     font-weight: bold;
-    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 #links {
     text-align: right;
     font-size: 20px;
     margin: auto;
-    margin-right: 15px;
+    margin-right: 7.5px;
 }
 #links a {
     text-decoration: none;
@@ -40,6 +44,10 @@ body {
     margin: 0;
     border: 1px solid black;
     flex-direction: row;
+}
+#links a:hover {
+    color:#12d3cf;
+    border: 1px solid #12d3cf;
 }
 #links2 {
     font-size: 15pt;
@@ -67,10 +75,6 @@ body {
     color:#12d3cf;
     border: 1px solid #12d3cf;
 }
-#links a:hover {
-    color:#12d3cf;
-    border: 1px solid #12d3cf;
-}
 /* NAVBAR END */
 
 /* SPLASH PAGE */
@@ -80,12 +84,12 @@ body {
     background-color: #fcf9ec;
     display: flex;
     flex-direction: column;
-    background: url("lucid.png") no-repeat center;
+    background: url("lucid2.png") no-repeat center;
     background-size: 1080px;
     color: #b0f4e6;
 }
 .title {
-    margin-top: 20%;
+    margin-top: 10%;
     text-align: center;
     height: 600px;
 }
@@ -137,6 +141,8 @@ body {
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 #about .box1{
     width: 1200px;
@@ -166,34 +172,70 @@ body {
 
 /* START METHODS */
 #methodContainer {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#methodContainer h1 {
+    text-align: center;
+    font-size: 22pt;
+    text-decoration: underline;
+}
+.myDiv p {
+    padding: 15px;
 }
 .myDiv {
     display: none;
     border: 1px solid black;
-    width: 90%;
+    width: 72.5%;
     margin: auto;
     padding: 3px;
     margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
 }
 .mButton {
     background: rgb(34,193,195);
     background: linear-gradient(151deg, #12d3cf 0%, rgba(253,187,45,1) 100%);
     border: 0;
+    border-radius: 5px;
     color: #333;
     font-weight: bold;
-    width: 100%;
-    height: 40px;
-    font-size: 12pt;
+    width: 75%;
+    height: 50px;
+    font-size: 18pt;
     margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#caret {
+    float: right;
+    padding-right: 10px;
+}
+/* END METHODS */
+
+/* START NEWSLETTER */
+#newsletter {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    border: 1px dotted black;
+}
+#newsletter input {
+    margin: 5px;
+    height: 30px;
 }
 /* ************** */
 /* MOBILE SETTING */
 /* ************** */
 
-/* TABLETS + BIGGER PHONES */
+/* TABLETS + BIGGER PHONES */ /*
 @media only screen and (max-width: 968px) {
     #links {
         display: none;
@@ -210,10 +252,10 @@ body {
     .title h2 {
         margin: 5px;
     }
-}
+} */
 
 /* SMALL PHONES (LESS THAN 445px width) */
-@media only screen and (max-width: 445px) {
+/* @media only screen and (max-width: 445px) {
     #links {
         display: none;
     }
@@ -225,7 +267,7 @@ body {
     .cont1 {
         width: 100%;
     }
-}
+} */
 /* HIDE MOBILE LINKS FOR DESKTOP SITE */
 @media only screen and (min-width: 968px) {
     #links2 {
